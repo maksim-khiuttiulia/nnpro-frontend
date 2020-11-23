@@ -87,7 +87,7 @@ class ReportDetails extends Component<Props, State> {
         return (
             <div>
                 <ErrorMessage show={this.state.isError}/>
-                <FinishVisitDialog item={this.state.report} onSubmit={this.onFinishReportSubmit} onCancel={this.onFinishReportCancel} isOpen={this.state.updateReportOpen}/>>
+                <FinishVisitDialog item={this.state.report} onSubmit={this.onFinishReportSubmit} onCancel={this.onFinishReportCancel} isOpen={this.state.updateReportOpen}/>
                 <div className="row mb-5">
                     <div className="col">
                         <h1>Návštěva {this.state.report.animal?.name}</h1>
